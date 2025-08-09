@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import StudyMart from './pages/Studymart';
-import Arkive from './pages/Arkive';
-import AskAway from './pages/Askaway';
+// Lazy route example
+const LandingPage = React.lazy(() => import("./pages/LandingPage"))
+const RegisterPage = React.lazy(() => import("./pages/RegisterPage"))
+const LoginPage = React.lazy(() => import("./pages/LandingPage"))
+const StudyMart = React.lazy(() => import("./pages/StudyMart"));
+const Arkive = React.lazy(() => import("./pages/Arkive"))
+const AskAway = React.lazy(() => import("./pages/AskAway"))
 
 const App = () => {
   return (
