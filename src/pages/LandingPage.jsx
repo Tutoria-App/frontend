@@ -238,6 +238,9 @@ const LandingPage = () => {
               <li><Link to="/askaway" className="hover:text-yellow-300">AskAway</Link></li>
               <li><Link to="/arkive" className="hover:text-yellow-300">Arkive</Link></li>
               <li><Link to="/studymart" className="hover:text-yellow-300">StudyMart</Link></li>
+
+              <br></br>
+              <li><Link to="/privacy" className="hover:text-yellow-300">Policy Privacy</Link></li>
             </ul>
           </div>
           <div>
